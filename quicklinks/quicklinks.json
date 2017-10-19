@@ -1,0 +1,24 @@
+{
+  "name": "default",
+  "description": "default quick links configuration",
+  "configuration": {
+
+    "links": [
+	  {
+        "name": "neo4j_ui",
+        "label": "NEO4J UI",
+        "requires_user_name": "false",
+        "component_name": "NEO4J_SERVER",
+        "url":"%@://%@:%@/",
+        "port":{
+          "http_property": "7474",
+          "http_default_port": "7474",
+          "https_property": "7474",
+          "https_default_port": "7474",
+          "regex": "^(\\d+)$",
+          "site": "neo4j"
+        }
+      }
+    ]
+  }
+}

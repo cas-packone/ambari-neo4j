@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<metainfo>
+  <schemaVersion>2.0</schemaVersion>
+  <services>
+    <service>
+      <name>NEO4J</name>
+      <displayName>neo4j</displayName>
+      <comment>the world’s leading Graph Database. It is a high performance graph store with all the features expected of a mature and robust database, like a friendly query language and ACID transactions.</comment>
+      <version>3.2.6</version>
+      <components>
+        <component>
+          <name>NEO4J_SERVER</name>
+          <displayName>neo4j</displayName>
+          <category>MASTER</category>
+		  <cardinality>1</cardinality>
+		  <versionAdvertised>true</versionAdvertised>
+		  <timelineAppid>neo4j</timelineAppid>
+          <commandScript>
+            <script>scripts/neo4j.py</script>
+            <scriptType>PYTHON</scriptType>
+            <timeout>600</timeout>
+          </commandScript>
+        </component>
+      </components>
+    
+	  <quickLinksConfigurations>
+        <quickLinksConfiguration>
+          <fileName>quicklinks.json</fileName>
+          <default>true</default>
+        </quickLinksConfiguration>
+      </quickLinksConfigurations>
+    </service>
+  </services>
+</metainfo>
